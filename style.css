@@ -1,0 +1,290 @@
+:root{
+    --primary-blue:#3B86BE;
+    --secondary-blue:#002B4C;
+    --third:#b1cfe6;
+    --white:#f5f5f5;
+    --accent:#ffd700;
+    --text-color:#151515;
+}
+
+
+/*design for hero*/
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("/pictures/pexel-building.jpg");
+    background-size: cover; 
+    background-position: top 35% right 0;
+    height: 40vw;
+    width: 100%;
+    padding: 20px 5vw;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.55);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 4%;
+}
+
+.hero h1{
+    color: var(--primary-blue);
+    font-family: 'Franklin Gothic Medium'!important;
+    color: var(--third);
+}
+
+.hero h2{
+    margin-left: 8px;
+    color: var(--white);
+}
+
+/*design for intro*/
+
+.intro{
+    width: 80%;
+    margin: 10% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.intro img{
+    width: 60vh;
+    transition: transform .5s;
+    box-shadow: 10px 10px 0px 0px var(--accent);
+}
+
+.intro img:hover{
+    transform:scale(1.2);
+}
+
+.intro p{
+    font-size:large;
+    width: 510px;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+
+/*design for poster*/
+.poster{
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 60px 0;
+
+    background: var(--secondary-blue);
+}
+
+.poster img{
+    width: 30vw;
+    object-fit: cover;
+    box-shadow: 10px 10px 0px 0px var(--primary-blue);
+}
+
+/*design for lms*/
+.lms {
+    text-align: center;
+    margin: 10% 5%;
+}
+
+.lms div{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.lms a img {
+    width: 10vw;
+}
+
+/*design for banner*/
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("/pictures/pexels-luis-gomes.jpg");
+    background-size: cover; 
+    background-position: top 45% right 0;
+    height: 14vw;
+    width: 100%;
+    margin-bottom: 4%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner h2{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--white);
+}
+
+.banner p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+
+    font-size:2vw;
+    color: var(--white);
+}
+
+.banner a{
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/*design for languages*/
+.prog-lang {
+    text-align: center;
+    margin: 10% auto;
+}
+
+.prog-lang div{
+    margin-top: 4vh;
+    padding: 0 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center; 
+    align-items: center;
+    gap: 2vw;
+}
+
+.prog-lang img {
+    width: 19vh;
+    padding: 12px 20px;
+}
+
+/*design for prog-web*/
+.prog-web {
+    text-align: center;
+    margin: 10% auto;
+}
+
+.prog-web div{
+    margin-top: 4vh;
+    padding: 0 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center; 
+    align-items:center;
+    gap: 2vw;
+}
+
+.prog-web a img {
+    width: 50px;
+    object-fit: cover;
+}
+
+.prog-web div a {
+    width: 38vh;
+    height: 10vh;
+    padding: 10px;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.prog-web div a span {
+    font-size: large;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+@media  only screen and (max-width: 240px) {
+    nav .logo-brand span {
+      display: none;
+    }
+
+    .intro{
+        width: 90%;
+    }
+
+    .intro img{
+        object-fit: cover;
+    }
+
+    .poster{
+        width: 100%;   
+    }
+
+    .poster img{
+        width: 1vw;
+    }
+
+    .prog-lang a img {
+        width: 8vh;
+    }
+
+    .prog-web a img {
+        width: 20px;
+    }
+    
+    .prog-web div a {
+        width: 30vh;
+        height: 7vh;
+    }
+    
+    .prog-web div a span {
+        font-size: medium;
+    }    
+
+  }
+
+@media  only screen and (max-width: 640px) {
+    nav .logo-brand span {
+      display: none;
+    }
+
+    .intro{
+        width: 90%;
+    }
+
+    .intro img{
+        width: 40vh;
+    }
+
+    .poster{
+        margin: 5% auto; 
+        width: 100%;   
+    }
+
+    .poster img{
+        width: 3vh;
+    }
+
+    .prog-web a img {
+        width: 30px;
+    }
+    
+    .prog-web div a {
+        width: 30vh;
+        height: 7vh;
+    }
+    
+    .prog-web div a span {
+        font-size: medium;
+    }    
+
+  }
+
+  @media  only screen and (max-width: 1280px) {
+    .poster img{
+        width: 60vw;
+    }
+
+    .prog-lang  a img {
+        width: 80px;
+    }
+
+  }

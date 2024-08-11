@@ -1,0 +1,317 @@
+:root{
+  --primary-blue:#3B86BE;
+  --secondary-blue:#002B4C;
+  --third:#b1cfe6;
+  --white:#f5f5f5;
+  --accent:#ffd700;
+  --text-color:#3c3c3c;
+}
+
+/*design for banner*/
+.about-banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url("/pictures/pexels-banner.jpg");
+    background-size: cover; 
+    background-position: top 25% right 0;
+    height: 23vw;
+    width: 100%;
+    padding: 20px 5vw;
+    box-shadow: 0px 4px 4px 0px rgba(62, 62, 62, 0.35);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 4%;
+}
+
+.about-banner h1{
+    text-align: center;
+    color: var(--white);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*design for sidebar*/
+
+
+.flex{
+  display: flex;
+}
+
+.sidebar a {
+  display: block;
+  color: var(--secondary-blue);
+  font-size: large;
+  font-weight: 600;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.container section{
+  padding: 300px auto;
+}
+  
+.content {
+  margin-bottom: 20%;
+  padding: 1px 20px;
+  position: relative;
+}
+
+.content section{
+  margin: auto;
+  width: 80%;
+  padding: 2vw;
+}
+
+.content h2{
+  margin-bottom: 18px;
+}
+
+.content p, .content li{
+  font-size: large;
+  text-align: justify;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.itso-info{
+  width: 100%;
+  margin: 2% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+#itso{
+  text-align: center;
+  padding-top: 90px;
+}
+
+.itso-info img{
+  width: 60vh;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform .5s;
+  box-shadow: 10px 10px 0px 0px var(--accent);
+  border: 4px solid var(--white);
+}
+
+.section h2{
+  text-align: center;
+}
+
+.itso-info p{
+  margin-top: 50px;
+  width: 510px;
+  font-size: large;
+  color: var(--text-color);
+  text-align: justify;
+}
+
+.objective-info {
+  margin: 10% auto;
+  text-align: center;
+}
+
+.objective-info .text-container {
+  max-width: 80%; 
+  margin: 0 auto; 
+  text-align: justify; 
+}
+
+.objective-info p{
+  margin-top: 10px;
+  font-size: large;
+  color: var(--text-color);
+}
+
+.objective-info ul {
+  text-align: center;
+}
+
+.objective-info li {
+  margin-left: 20px;
+  text-align: justify; 
+  font-size: large;
+  color: var(--text-color);
+}
+
+/*design for testimonials*/
+
+.testimonials-banner{
+  margin: auto;
+  padding: 120px 16px;
+  background:var(--secondary-blue);
+}
+
+.testimonials{
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding:16px 30px;
+  gap:14px;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.testi-card{
+  width:40vh;
+  height:42vh;
+  background:#fff;
+  border-radius:8px;
+  margin:15px;
+}
+ 
+.testi-card div{
+    padding: 20px 20px ;
+    text-align: left;
+    font-size: 2.5vh;
+    color: rgb(98, 98, 98);
+}
+
+
+.testi-card h4{
+    color: var(--secondary-blue);
+    font-weight: bold;
+    display:inline-block;
+    margin-top: 0;
+}
+
+.testi-card p{
+  color: rgb(121, 121, 121);
+  font-weight:bold;
+  display:flex;
+  font-size: 1.54vh;
+}
+
+/*design for psu websites*/
+.psu-web {
+  text-align: center;
+  margin: 10% auto;
+}
+
+.psu-web div{
+  margin-top: 4vh;
+  padding: 0 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center; 
+  align-items: center;
+  gap: 2vw;
+}
+
+.psu-web a img {
+  width: 60vw;
+  object-fit: cover;
+  transition: transform .5s;
+  box-shadow: 10px 10px 0px 0px var(--accent);
+  border: 4px solid var(--white);
+}
+
+.psu-web a img:hover{
+  transform:scale(0.9);
+}
+  
+ 
+  /*Media query*/
+
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 340px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+
+    .itso-info img{
+      width: 40vh;
+      border-radius: 10px;
+    }
+     
+    .testi-card div{
+        padding: 10px 10px ;
+        text-align: left;
+        font-size: 0.5vh;
+    }
+    
+    .testi-card h4{
+        color: var(--secondary-blue);
+        font-weight: bold;
+        font-size: 1.3vh;
+    }
+    
+    .testi-card p{
+      color: rgb(121, 121, 121);
+      font-size: 1.0vh;
+    }
+    }
+  
+
+  @media screen and (max-width: 640px) {
+    nav .logo-brand span {
+        display: none;
+      }
+
+      .flex{
+        flex-direction: column;
+      }
+      
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: sticky;
+        display: flex;
+        font-size: small;
+        font-weight: 600;
+        padding: 0;
+        text-decoration: none;
+    }
+    .sidebar a {
+        float: inline-start;
+    }
+
+    .content p, .content li{
+      font-size: medium;
+      text-align: justify;
+    }
+
+    .content {
+      margin-bottom: 10%;
+      margin-left: 0;
+      padding: 1px 20px;  
+    }
+    
+    .content section{
+      margin: auto;
+      width: 80%;
+      padding: 2vw;
+    }
+
+    .testi-card{
+      width:100%;
+      height:fit-content;
+    }
+     
+    .testi-card div{
+        padding: 20px 10px;
+        text-align: left;
+        font-size: 1.5vh;
+    }
+    
+    
+    .testi-card h4{
+        color: var(--secondary-blue);
+        font-weight: bold;
+      font-size: 1.9vh;
+    }
+    
+    .testi-card p{
+      color: rgb(121, 121, 121);
+      font-size: 1.3vh;
+    }
+    
+  }
+  
