@@ -9,7 +9,7 @@
 
 /*design for banner*/
 .about-banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url("/pictures/pexels-banner.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url("./pictures/pexels-banner.jpg");
     background-size: cover; 
     background-position: top 25% right 0;
     height: 23vw;
