@@ -36,18 +36,18 @@ html{
 /*design for sidebar*/
 
 
-.flex{
+/* .flex{
   display: flex;
-}
+} */
 
-.sidebar a {
+/* .sidebar a {
   display: block;
   color: var(--secondary-blue);
   font-size: large;
   font-weight: 600;
   padding: 20px;
   text-decoration: none;
-}
+} */
 
 .container section{
   padding: 300px auto;
@@ -220,11 +220,20 @@ html{
   /*Media query*/
 
     /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 340px) {
-    .sidebar a {
+  @media screen and (max-width: 360px) {
+    .about-banner{
+      height: 22vh;
+    }
+  
+    .about-banner h1{
+      font-size: 40px;
+      line-height: 2rem;
+    }
+
+    /* .sidebar a {
       text-align: center;
       float: none;
-    }
+    } */
 
     .itso-info img{
       width: 40vh;
@@ -255,11 +264,11 @@ html{
         display: none;
       }
 
-      .flex{
+      /* .flex{
         flex-direction: column;
-      }
+      } 
       
-    .sidebar {
+     .sidebar {
         width: 100%;
         height: auto;
         position: sticky;
@@ -271,8 +280,17 @@ html{
     }
     .sidebar a {
         float: inline-start;
-    }
+    } */
 
+    .about-banner{
+      height: 22vh;
+    }
+  
+    .about-banner h1{
+      font-size: 40px;
+      line-height: 2rem;
+    }
+    
     .content p, .content li{
       font-size: medium;
       text-align: justify;

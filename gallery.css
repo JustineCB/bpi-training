@@ -64,7 +64,17 @@
     transform:scale(2.0);
 }            
 
-@media  only screen and (max-width: 240px) {
+@media  only screen and (max-width: 360px) {
+
+    .gallery-banner{
+        height: 22vh;
+    }
+    
+      .gallery-banner h1{
+        font-size: 40px;
+        line-height: 2rem;
+     }
+
     nav .logo-brand span {
       display: none;
     }
@@ -87,6 +97,15 @@
     nav .logo-brand span {
       display: none;
     }
+
+    .gallery-banner{
+        height: 22vh;
+    }
+    
+      .gallery-banner h1{
+        font-size: 40px;
+        line-height: 2rem;
+     }
 
     .photos-act, .photos-events{
         margin: auto;

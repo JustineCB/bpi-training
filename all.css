@@ -37,13 +37,13 @@ body {
 
 
 h1{
-    font-size: 4.5vw;
+    font-size: 5.5vw;
     line-height: 4.5vw;
 }
 
 h2{
     font-size: 2rem;
-    line-height: 1.2rem;
+    line-height: 2rem;
     color: var(--primary-blue);
     font-weight: 800;
 }

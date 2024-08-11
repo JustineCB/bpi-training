@@ -74,7 +74,7 @@ h2 {
 
 form div {
     margin: auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -107,6 +107,7 @@ form div {
 }
 
 .row {
+    width: 90%;
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
@@ -117,9 +118,28 @@ form div {
     margin-top: 6px;
 }
 
+@media screen and (max-width: 360px) {
+    .contact-banner{
+      height: 22vh;
+    }
+  
+    .contact-banner h1{
+      font-size: 40px;
+      line-height: 2rem;
+    }
+}
 @media  only screen and (max-width: 640px) {
     nav .logo-brand span {
       display: none;
+    }
+
+    .contact-banner{
+        height: 22vh;
+    }
+    
+    .contact-banner h1{
+        font-size: 40px;
+        line-height: 2rem;
     }
 
     .contact-info span{
@@ -131,6 +151,18 @@ form div {
         width: 25px;
         height: 25px;
         vertical-align: middle;
+    }
+
+
+    .row {
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Optional: Ensure rows use full width */
+    }
+
+    .submit {
+        align-self: center; /* Center the submit button in its row */
+        margin-top: 10px; /* Optional: Add some space above the button */
     }
 
   }
